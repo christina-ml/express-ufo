@@ -18,8 +18,6 @@ app.get("/sightings", (req, res)=>{
     console.log('state: ', state);
     console.log('city: ', city);
     console.log('shape: ', shape);
-
-
     /* 
         This works, but it uses `res.write` and `res.end` instead of `res.send`
         How can I make this work in a loop that uses `res.send` at the end?
